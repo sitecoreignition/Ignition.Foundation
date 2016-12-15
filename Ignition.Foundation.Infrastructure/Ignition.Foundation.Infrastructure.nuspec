@@ -18,7 +18,7 @@
       <dependency id="Glass.Mapper.Sc.Core" version="4.2.1" />
       <dependency id="Microsoft.AspNet.Mvc" version="5.2" />
       <dependency id="Rainbow.Core" version="1.4" />
-      <dependency id="YamlDotNet" version="4" />
+      <dependency id="YamlDotNet" version="4.0" />
     </dependencies>
   </metadata>
 </package>
