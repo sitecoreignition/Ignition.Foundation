@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Foundation.Data",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Foundation.Infrastructure", "Ignition.Foundation.Infrastructure\Ignition.Foundation.Infrastructure.csproj", "{6301E806-D84B-4678-AB6E-AACA3689113A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{1B4F85E5-4E1B-4494-B680-EB430E9BA004}"
+	ProjectSection(SolutionItems) = preProject
+		Ignition.Foundation.nuspec = Ignition.Foundation.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -214,7 +214,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Ignition.Foundation.nuspec" />
     <None Include="packages.config" />
     <None Include="_Ignition.Foundation.Core.nuspec" />
   </ItemGroup>

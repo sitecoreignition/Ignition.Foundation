@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Ignition.Foundation</id>
-    <version>$version</version>
+    <version>1.0</version>
     <title>Ignition.Foundation</title>
     <authors>Perficient</authors>
     <owners>Perficient</owners>
