@@ -4,8 +4,8 @@
     <id>$id$</id>
     <version>$version$</version>
     <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <authors>Perficient</authors>
+    <owners>Perficient</owners>
     <licenseUrl>https://github.com/sitecoreignition/SitecoreIgnition/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/sitecoreignition/SitecoreIgnition</projectUrl>
     <iconUrl>http://www.perficient.com/-/media/images/ignition/ignition.ashx</iconUrl>
