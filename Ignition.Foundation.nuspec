@@ -6,7 +6,7 @@
     <title>Ignition.Foundation</title>
     <authors>Perficient</authors>
     <owners>Perficient</owners>
-    <licenseUrl>https://github.com/sitecoreignition/SitecoreIgnition/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/sitecoreignition/SitecoreIgnition/develop/LICENSE</licenseUrl>
     <projectUrl>https://github.com/sitecoreignition/SitecoreIgnition</projectUrl>
     <iconUrl>http://www.perficient.com/-/media/images/ignition/ignition.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
