@@ -14,13 +14,18 @@
     <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>ignition sitecore accelerator framework helix habitat</tags>
-    <files>
+    <dependencies>
+      <dependency id="Ignition.Foundation.Core" version="1.0" />
+      <dependency id="Ignition.Foundation.Data" version="1.0" />
+      <dependency id="Ignition.Foundation.Infrastructure" version="1.0" />
+    </dependencies>
+    <!--<files>
       <file src="..\Ignition.Foundation.Core\bin\$configuration$\Ignition.Foundation.Core.dll" target="lib" />
       <file src="..\Ignition.Foundation.Core\bin\$configuration$\Ignition.Foundation.Core.pdb" target="lib" />
       <file src="..\Ignition.Foundation.Data\bin\$configuration$\Ignition.Foundation.Data.dll" target="lib" />
       <file src="..\Ignition.Foundation.Data\bin\$configuration$\Ignition.Foundation.Data.pdb" target="lib" />
       <file src="..\Ignition.Foundation.Infrastructure\bin\$configuration$\Ignition.Foundation.Infrastructure.dll" target="lib" />
       <file src="..\Ignition.Foundation.Infrastructure\bin\$configuration$\Ignition.Foundation.Infrastructure.pdb" target="lib" />
-    </files>
+    </files>-->
   </metadata>
 </package>
