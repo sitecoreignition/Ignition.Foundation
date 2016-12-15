@@ -14,11 +14,11 @@
     <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>ignition sitecore accelerator framework helix habitat</tags>
+    <dependencies>
+      <dependency id="Glass.Mapper.Sc.Core" version="4.2.1" />
+      <dependency id="Microsoft.AspNet.Mvc" version="5.2" />
+      <dependency id="Rainbow.Core" version="1.4" />
+      <dependency id="YamlDotNet" version="4" />
+    </dependencies>
   </metadata>
-  <dependencies>
-    <dependency id="Glass.Mapper.Sc.Core" version="4.2.1" />
-    <dependency id="Microsoft.AspNet.Mvc" version="5.2" />
-    <dependency id="Rainbow.Core" version="1.4" />
-    <dependency id="YamlDotNet" version="4" />
-  </dependencies>
 </package>

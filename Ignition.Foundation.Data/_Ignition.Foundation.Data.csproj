@@ -160,7 +160,6 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="_Ignition.Foundation.Data.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ignition.Foundation.Core\_Ignition.Foundation.Core.csproj">

@@ -110,7 +110,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ignition.Foundation.Infrastructure.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
