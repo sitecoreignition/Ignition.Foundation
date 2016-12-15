@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/sitecoreignition/SitecoreIgnition</projectUrl>
     <iconUrl>http://www.perficient.com/-/media/images/ignition/ignition.ashx</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>An open source development accelerator designed by the team at Perficient and released to the Sitecore community as a quick-start tool for beginning Sitecore projects.</description>
     <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>ignition sitecore accelerator framework helix habitat</tags>
