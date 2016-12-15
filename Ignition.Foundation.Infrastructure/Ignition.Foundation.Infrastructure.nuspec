@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/sitecoreignition/SitecoreIgnition/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/sitecoreignition/SitecoreIgnition</projectUrl>
+    <iconUrl>http://www.perficient.com/-/media/images/ignition/ignition.ashx</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>ignition sitecore accelerator framework helix habitat</tags>
+  </metadata>
+</package>
