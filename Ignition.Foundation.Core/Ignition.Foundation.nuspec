@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Ignition.Foundation</id>
+    <version>$version</version>
+    <title>Ignition.Foundation</title>
+    <authors>Perficient</authors>
+    <owners>Perficient</owners>
+    <licenseUrl>https://github.com/sitecoreignition/SitecoreIgnition/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/sitecoreignition/SitecoreIgnition</projectUrl>
+    <iconUrl>http://www.perficient.com/-/media/images/ignition/ignition.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An open source development accelerator designed by the team at Perficient and released to the Sitecore community as a quick-start tool for beginning Sitecore projects.</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>ignition sitecore accelerator framework helix habitat</tags>
+    <files>
+      <file src="..\Ignition.Foundation.Core\bin\$configuration$\Ignition.Foundation.Core.dll" target="lib" />
+      <file src="..\Ignition.Foundation.Core\bin\$configuration$\Ignition.Foundation.Core.pdb" target="lib" />
+      <file src="..\Ignition.Foundation.Data\bin\$configuration$\Ignition.Foundation.Data.dll" target="lib" />
+      <file src="..\Ignition.Foundation.Data\bin\$configuration$\Ignition.Foundation.Data.pdb" target="lib" />
+      <file src="..\Ignition.Foundation.Infrastructure\bin\$configuration$\Ignition.Foundation.Infrastructure.dll" target="lib" />
+      <file src="..\Ignition.Foundation.Infrastructure\bin\$configuration$\Ignition.Foundation.Infrastructure.pdb" target="lib" />
+    </files>
+  </metadata>
+</package>
