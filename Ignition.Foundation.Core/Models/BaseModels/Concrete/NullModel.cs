@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Glass.Mapper.Sc.Configuration.Attributes;
+using Sitecore.Data;
 using Sitecore.Globalization;
 
 namespace Ignition.Foundation.Core.Models.BaseModels.Concrete
@@ -83,7 +84,9 @@ namespace Ignition.Foundation.Core.Models.BaseModels.Concrete
             set { throw new NotImplementedException(); }
         }
 
-        public string DisplayName
+	    public ItemUri Uri { get; set; }
+
+	    public string DisplayName
         {
             get { return "Null Item"; }
             set { throw new NotImplementedException(); }
