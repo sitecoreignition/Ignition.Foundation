@@ -10,22 +10,13 @@ namespace Ignition.Foundation.Core.Mvc
 {
 	public abstract class Agent<TViewModel> where TViewModel : IgnitionViewModel, new()
 	{
-        [Import]
-        protected ISitecoreServiceFactory SitecoreServiceFactory { get; set; }
-
-        [Import]
-        protected IViewModelDataBinder ViewModelDataBinder { get; set; }
-
         public AgentContext AgentContext { get; private set; }
 	    public object AgentParameters => AgentContext.AgentParameters;
-        public IPage ContextPage => AgentContext.ContextPage;
-        public IModelBase Datasource => AgentContext.DatasourceItem;
+        //public IModelBase Datasource => AgentContext.DatasourceItem;
 	    public IParamsBase RenderingParameters => AgentContext.RenderingParameters;
 	    public ISitecoreContext SitecoreContext => AgentContext.SitecoreContext;
         
 		public TViewModel ViewModel { get; protected set; }
-        public string ViewPath => ViewModel.ViewPath;
-
 		public virtual void Initialize(AgentContext agentContext)
 		{
 			if (agentContext == null) throw new ArgumentNullException(nameof(agentContext));
@@ -34,11 +25,8 @@ namespace Ignition.Foundation.Core.Mvc
 			ViewModel = new TViewModel
 			{
 				ContextPage = AgentContext.ContextPage,
-				ParentPlaceholderName = AgentContext.PlaceholderName
 			};
-			ViewModelDataBinder.DataBind(ViewModel, Datasource);
 		}
-
 	    public abstract void PopulateModel();
 	}
 }

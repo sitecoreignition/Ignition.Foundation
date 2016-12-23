@@ -15,9 +15,6 @@ namespace Ignition.Foundation.Core.Mvc
         [Import]
         public IAgentFactory AgentFactory { get; set; }
 
-        [Import]
-        public ISitecoreServiceFactory SitecoreServiceFactory { get; set; }
-
         public IgnitionControllerContext IgnitionControllerContext => new IgnitionControllerContextFactory().GetInstance(ControllerContext, SitecoreContext);
 
 	    #region View Overloads
@@ -56,7 +53,7 @@ namespace Ignition.Foundation.Core.Mvc
             var contextPage = GetContextItem<IPage>(true, true) ?? new NullPage();
             var datasourceItem = GetDataSourceItem();
             var renderingParameters = GetRenderingParameters<TParams>();
-            var agentContext = new AgentContext(IgnitionControllerContext, SitecoreContext, contextPage, datasourceItem)
+            var agentContext = new AgentContext(IgnitionControllerContext, contextPage, datasourceItem)
             {
                 AgentParameters = agentParameters,
                 RenderingParameters = renderingParameters

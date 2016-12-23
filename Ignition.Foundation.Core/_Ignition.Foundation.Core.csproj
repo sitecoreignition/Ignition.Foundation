@@ -139,11 +139,6 @@
     <Compile Include="DynamicPlaceholders\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="DynamicPlaceholders\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Contracts\IGlassConfiguration.cs" />
-    <Compile Include="Models\BaseModels\Concrete\ModelBase.cs" />
-    <Compile Include="Models\BaseModels\Concrete\NullModel.cs" />
-    <Compile Include="Models\BaseModels\Concrete\NullPage.cs" />
-    <Compile Include="Models\BaseModels\Concrete\NullParams.cs" />
-    <Compile Include="Models\BaseModels\Concrete\ParamsBase.cs" />
     <Compile Include="Models\BaseModels\IModelBase.cs" />
     <Compile Include="Models\BaseModels\IModelBaseWithMetadata.cs" />
     <Compile Include="Models\BaseModels\INeedsChildren.cs" />
