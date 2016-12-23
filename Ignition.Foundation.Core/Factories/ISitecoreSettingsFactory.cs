@@ -1,4 +1,4 @@
-﻿namespace Ignition.Foundation.Core.Contracts
+﻿namespace Ignition.Foundation.Core.Factories
 {
 	public interface ISitecoreSettingsFactory
 	{

@@ -1,6 +1,4 @@
-﻿using Ignition.Foundation.Core.Bases;
-
-namespace Ignition.Foundation.Core.Repositories
+﻿namespace Ignition.Foundation.Core.Factories
 {
     public sealed class MasterDatabaseType : IDatabaseType
     {

@@ -1,5 +1,4 @@
-﻿using Ignition.Foundation.Core.Contracts;
-using Ignition.Foundation.Core.Mvc;
+﻿using Ignition.Foundation.Core.Mvc;
 using SimpleInjector;
 
 namespace Ignition.Foundation.Core.Factories
@@ -13,7 +12,7 @@ namespace Ignition.Foundation.Core.Factories
 			_container = container;
 		}
 
-		public TViewAgent CreateAgent<TViewAgent, TViewModel>(AgentContext agentContext)
+		public TViewAgent CreateAgent<TViewAgent, TViewModel>(AgentContext<TViewModel> agentContext)
 			where TViewAgent : Agent<TViewModel> where TViewModel : IgnitionViewModel, new()
 		{
 			var agent = _container.GetInstance<TViewAgent>();

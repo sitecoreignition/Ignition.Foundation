@@ -5,7 +5,6 @@ using System.Xml.Serialization;
 using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
 using Ignition.Foundation.Core.Models.BaseModels;
-using Ignition.Foundation.Core.Models.Page;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Converters;
 using Sitecore.Data;
@@ -13,7 +12,8 @@ using Sitecore.Globalization;
 
 namespace Ignition.Foundation.Core.Mvc
 {
-    public class IgnitionViewModel 
+	[SitecoreType(TemplateId = "{4C3CDC24-1610-4808-92A3-A221768AE3B2}", AutoMap = true)]
+	public class IgnitionViewModel  
     {
         public IPage ContextPage { get; set; }
 		public object GlassCssClassParameters(string cssClass) => new { @class = cssClass };

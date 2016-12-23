@@ -1,24 +1,19 @@
-﻿using System.ComponentModel.Composition;
-using Glass.Mapper.Sc;
-using Ignition.Foundation.Core.Models.BaseModels;
-using Ignition.Foundation.Core.Models.BaseModels.Concrete;
-using Ignition.Foundation.Core.Models.Page;
+﻿using Ignition.Foundation.Core.Models.BaseModels;
 
 namespace Ignition.Foundation.Core.Mvc
 {
-    public class AgentContext : IgnitionControllerContext
+    public class AgentContext<TViewModel> : IgnitionControllerContext where TViewModel : IgnitionViewModel
     {
         public object AgentParameters { get; set; }
         public IPage ContextPage { get; set; }
-        public IModelBase DatasourceItem { get; set; }
-        public IParamsBase RenderingParameters { get; set; } = new NullParams();
+        public TViewModel DatasourceItem { get; set; }
 	    public IPage HomeItem => SitecoreContext.GetHomeItem<IPage>(false, true);
-        public AgentContext(IgnitionControllerContext controllerContext, IPage contextPage, IModelBase datasourceItem, object agentParameters = null)
+        public AgentContext(IgnitionControllerContext controllerContext, IPage contextPage, TViewModel datasourceItem, object agentParameters = null) 
             : base(controllerContext, controllerContext.SitecoreContext)
         {
-            DatasourceItem = datasourceItem ?? new NullModel();
+            DatasourceItem = datasourceItem;
             AgentParameters = agentParameters;
-            ContextPage = contextPage ?? new NullPage();
+            ContextPage = contextPage;
         }
     }
 }
