@@ -8,7 +8,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{1B4F85E5-4E1B-4494-B680-EB430E9BA004}"
 	ProjectSection(SolutionItems) = preProject
 		Ignition.Foundation.Core\_Ignition.Foundation.Core.nuspec = Ignition.Foundation.Core\_Ignition.Foundation.Core.nuspec
+		Ignition.Foundation.Data\_Ignition.Foundation.Data.nuspec = Ignition.Foundation.Data\_Ignition.Foundation.Data.nuspec
+		Ignition.Foundation.Infrastructure\Ignition.Foundation.Infrastructure.nuspec = Ignition.Foundation.Infrastructure\Ignition.Foundation.Infrastructure.nuspec
+		Ignition.Foundation.nuspec = Ignition.Foundation.nuspec
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Project.CompositionRoot", "Ignition.Project.CompositionRoot\Ignition.Project.CompositionRoot.csproj", "{9DC2D289-775B-47A4-BCCA-79A433A091DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +25,10 @@ Global
 		{A11ADF09-8215-4A20-8EDD-894C969E0669}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A11ADF09-8215-4A20-8EDD-894C969E0669}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A11ADF09-8215-4A20-8EDD-894C969E0669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC2D289-775B-47A4-BCCA-79A433A091DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC2D289-775B-47A4-BCCA-79A433A091DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC2D289-775B-47A4-BCCA-79A433A091DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC2D289-775B-47A4-BCCA-79A433A091DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
