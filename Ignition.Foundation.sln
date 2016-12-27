@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Foundation.Core", "Ignition.Foundation.Core\_Ignition.Foundation.Core.csproj", "{A11ADF09-8215-4A20-8EDD-894C969E0669}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{1B4F85E5-4E1B-4494-B680-EB430E9BA004}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NuGet", ".NuGet", "{1B4F85E5-4E1B-4494-B680-EB430E9BA004}"
 	ProjectSection(SolutionItems) = preProject
 		Ignition.Foundation.Core\_Ignition.Foundation.Core.nuspec = Ignition.Foundation.Core\_Ignition.Foundation.Core.nuspec
 	EndProjectSection
@@ -15,6 +15,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Feature.FormIgnition", "Ignition.Feature.FormIgnition\Ignition.Feature.FormIgnition.csproj", "{38E30617-7F9C-4E0D-8336-4CCD80F86EAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Feature.EloquaForm", "Ignition.Feature.EloquaForm\Ignition.Feature.EloquaForm.csproj", "{709D7312-D5CE-4C4B-A6E7-DCE948E935FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormIgnition", "FormIgnition", "{5B327491-267D-48FC-B455-0438B5720122}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositionRoot", "CompositionRoot", "{27C76A61-40AC-469B-8A17-DB13E05336CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,5 +45,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DC2D289-775B-47A4-BCCA-79A433A091DA} = {27C76A61-40AC-469B-8A17-DB13E05336CE}
+		{38E30617-7F9C-4E0D-8336-4CCD80F86EAF} = {5B327491-267D-48FC-B455-0438B5720122}
+		{709D7312-D5CE-4C4B-A6E7-DCE948E935FF} = {5B327491-267D-48FC-B455-0438B5720122}
 	EndGlobalSection
 EndGlobal

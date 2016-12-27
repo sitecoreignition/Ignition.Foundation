@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.Helpers;
 using Glass.Mapper.Sc;
 using Ignition.Foundation.Core.Models.BaseModels;
 
@@ -10,7 +11,7 @@ namespace Ignition.Foundation.Core.Mvc
 	    public object AgentParameters => AgentContext.AgentParameters;
         //public IModelBase Datasource => AgentContext.DatasourceItem;
 	    public ISitecoreContext SitecoreContext => AgentContext.SitecoreContext;
-        
+
 		public TViewModel ViewModel { get; protected set; }
 		public virtual void Initialize(AgentContext<TViewModel> agentContext)
 		{
@@ -22,3 +23,4 @@ namespace Ignition.Foundation.Core.Mvc
 	    public abstract void PopulateModel();
 	}
 }
+
