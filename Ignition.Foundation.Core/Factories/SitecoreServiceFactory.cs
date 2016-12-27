@@ -4,10 +4,9 @@ namespace Ignition.Foundation.Core.Factories
 {
     public class SitecoreServiceFactory : ISitecoreServiceFactory
     {
-        public ISitecoreService GetSitecoreService<T>() where T : IDatabaseType, new()
+        public ISitecoreService GetSitecoreService(ISitecoreContext context)
         {
-            var databaseType = new T();
-            return new SitecoreService(databaseType.GetDatabaseName());
+            return new SitecoreService(context.Database);
         }
     }
 }
