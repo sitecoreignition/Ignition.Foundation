@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Specialized;
-using System.ComponentModel;
-using System.Xml.Serialization;
-using Glass.Mapper.Sc.Configuration;
+﻿using System.Collections.Specialized;
 using Glass.Mapper.Sc.Configuration.Attributes;
 using Ignition.Foundation.Core.Models.BaseModels;
-using Sitecore.ContentSearch;
-using Sitecore.ContentSearch.Converters;
-using Sitecore.Data;
-using Sitecore.Globalization;
 
 namespace Ignition.Foundation.Core.Mvc
 {

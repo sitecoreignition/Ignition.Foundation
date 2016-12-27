@@ -31,17 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Glass.Mapper, Version=4.2.1.190, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.190\lib\net45\Glass.Mapper.dll</HintPath>
+    <Reference Include="Glass.Mapper, Version=4.3.2.195, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.2.195\lib\net45\Glass.Mapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc, Version=4.2.1.190, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Glass.Mapper.Sc, Version=4.3.2.195, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.190\lib\81\Glass.Mapper.Sc.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.2.195\lib\100\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc.Mvc, Version=4.2.1.190, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Glass.Mapper.Sc.Mvc, Version=4.3.2.195, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.190\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.2.195\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="SimpleInjector, Version=3.3.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.3.3.2\lib\net45\SimpleInjector.dll</HintPath>
@@ -71,20 +71,8 @@
       <HintPath>..\packages\Sitecore.Client.NoReferences.8.2.161115\lib\NET452\Sitecore.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.NoReferences.8.2.161115\lib\NET452\Sitecore.ContentSearch.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.ContentSearch.Linq.NoReferences.8.2.161115\lib\NET452\Sitecore.ContentSearch.Linq.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.161115\lib\NET452\Sitecore.Kernel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.NoReferences.8.2.161115\lib\NET452\Sitecore.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -149,6 +137,7 @@
     <Compile Include="Models\System\IFolder.cs" />
     <Compile Include="Models\System\IMediaItem.cs" />
     <Compile Include="Mvc\IgnitionControllerContext.cs" />
+    <Compile Include="Mvc\IgnitionModel.cs" />
     <Compile Include="Mvc\Routing\PublicRouteAttribute.cs" />
     <Compile Include="Mvc\Routing\PublicRouteProvider.cs" />
     <Compile Include="Mvc\SimpleAgent.cs" />
