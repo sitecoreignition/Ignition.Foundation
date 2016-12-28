@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Foundation.Core", "Ignition.Foundation.Core\_Ignition.Foundation.Core.csproj", "{A11ADF09-8215-4A20-8EDD-894C969E0669}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Foundation.Core", "Ignition.Foundation.Core\Ignition.Foundation.Core.csproj", "{A11ADF09-8215-4A20-8EDD-894C969E0669}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NuGet", ".NuGet", "{1B4F85E5-4E1B-4494-B680-EB430E9BA004}"
 	ProjectSection(SolutionItems) = preProject
