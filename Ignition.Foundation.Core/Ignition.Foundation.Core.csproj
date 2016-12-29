@@ -127,11 +127,9 @@
     <Compile Include="Factories\IDatabaseType.cs" />
     <Compile Include="Factories\ISitecoreSettingsFactory.cs" />
     <Compile Include="Factories\SitecoreSettingsFactory.cs" />
-    <Compile Include="Factories\IAgentFactory.cs" />
     <Compile Include="Factories\IgnitionControllerContextFactory.cs" />
     <Compile Include="Factories\IIgnitionControllerContextFactory.cs" />
     <Compile Include="Factories\ISitecoreServiceFactory.cs" />
-    <Compile Include="Factories\SimpleInjectorAgentFactory.cs" />
     <Compile Include="Factories\SitecoreServiceFactory.cs" />
     <Compile Include="CoreConfiguration.cs" />
     <Compile Include="DynamicPlaceholders\DynamicPlaceholder.cs" />
@@ -152,11 +150,8 @@
     <Compile Include="Mvc\IgnitionModel.cs" />
     <Compile Include="Mvc\Routing\PublicRouteAttribute.cs" />
     <Compile Include="Mvc\Routing\PublicRouteProvider.cs" />
-    <Compile Include="Mvc\SimpleAgent.cs" />
     <Compile Include="Mvc\ExperienceEditorViewEngine.cs" />
-    <Compile Include="Mvc\AgentContext.cs" />
     <Compile Include="DeferredScriptLoader\DeferredScriptLoader.cs" />
-    <Compile Include="Mvc\Agent.cs" />
     <Compile Include="Mvc\IgnitionViewModel.cs" />
     <Compile Include="Mvc\IgnitionController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

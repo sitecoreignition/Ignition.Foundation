@@ -4,54 +4,41 @@ using System.Reflection;
 using SimpleInjector;
 using SimpleInjector.Advanced;
 
-/// <summary>
-/// https://simpleinjector.readthedocs.io/en/latest/extensibility.html#overriding-constructor-resolution-behavior
-/// </summary>
-
-
 namespace Ignition.Foundation.Core.SimpleInjector
 {
     public class MostResolvableConstructorBehavior : IConstructorResolutionBehavior
     {
-        private readonly Container container;
+        private readonly Container _container;
 
         public MostResolvableConstructorBehavior(Container container)
         {
-            this.container = container;
+            _container = container;
         }
 
-        private bool IsCalledDuringRegistrationPhase => !this.container.IsLocked();
+        private bool IsCalledDuringRegistrationPhase => !_container.IsLocked();
 
         public ConstructorInfo GetConstructor(Type service, Type implementation)
         {
             var constructors = implementation.GetConstructors();
+            if (!constructors.Any()) return null;
 
-            if (!constructors.Any())
-                return null;
-
-            return (
-                from ctor in constructors
-                let parameters = ctor.GetParameters()
-                where this.IsCalledDuringRegistrationPhase
-                      || constructors.Length == 1
-                      || parameters.All(p => this.CanBeResolved(p, service, implementation))
-                orderby parameters.Length descending
-                select ctor)
+            return constructors.Select(constructor => new {constructor, parameters = constructor.GetParameters()})
+	            .Where(t => IsCalledDuringRegistrationPhase
+	                         || constructors.Length == 1
+	                         || t.parameters.All(p => CanBeResolved(p, service, implementation)))
+	            .OrderByDescending(t => t.parameters.Length)
+	            .Select(t => t.constructor)
                 .First();
         }
-
         private bool CanBeResolved(ParameterInfo p, Type service, Type implementation)
         {
-            return this.container.GetRegistration(p.ParameterType) != null ||
-                   this.CanBuildType(p, service, implementation);
+            return _container.GetRegistration(p.ParameterType) != null || CanBuildType(p, service, implementation);
         }
-
         private bool CanBuildType(ParameterInfo p, Type service, Type implementation)
         {
             try
             {
-                this.container.Options.DependencyInjectionBehavior.BuildExpression(
-                    new InjectionConsumerInfo(service, implementation, p));
+                _container.Options.DependencyInjectionBehavior.BuildExpression(new InjectionConsumerInfo(service, implementation, p));
                 return true;
             }
             catch (ActivationException)
