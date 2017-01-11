@@ -35,5 +35,8 @@ namespace Ignition.Foundation.Core.Mvc
 
 		[SitecoreInfo(SitecoreInfoType.Url, UrlOptions = SitecoreInfoUrlOptions.LanguageEmbeddingNever)]
 		public virtual string Url { get; set; }
+
+        [SitecoreInfo(SitecoreInfoType.TemplateId)]
+        public virtual Guid TemplateId { get; set; }
 	}
 }
