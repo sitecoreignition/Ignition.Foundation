@@ -20,6 +20,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormIgnition", "FormIgnitio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositionRoot", "CompositionRoot", "{27C76A61-40AC-469B-8A17-DB13E05336CE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installer", "Installer", "{47F5A51E-6E99-4FB3-9A59-B0BB214DD6E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Installer", "Ignition.Installer\Ignition.Installer.csproj", "{5F1A3BCE-4814-4F43-924E-595706DC725F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +46,10 @@ Global
 		{709D7312-D5CE-4C4B-A6E7-DCE948E935FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{709D7312-D5CE-4C4B-A6E7-DCE948E935FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{709D7312-D5CE-4C4B-A6E7-DCE948E935FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1A3BCE-4814-4F43-924E-595706DC725F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1A3BCE-4814-4F43-924E-595706DC725F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1A3BCE-4814-4F43-924E-595706DC725F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1A3BCE-4814-4F43-924E-595706DC725F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +58,6 @@ Global
 		{9DC2D289-775B-47A4-BCCA-79A433A091DA} = {27C76A61-40AC-469B-8A17-DB13E05336CE}
 		{38E30617-7F9C-4E0D-8336-4CCD80F86EAF} = {5B327491-267D-48FC-B455-0438B5720122}
 		{709D7312-D5CE-4C4B-A6E7-DCE948E935FF} = {5B327491-267D-48FC-B455-0438B5720122}
+		{5F1A3BCE-4814-4F43-924E-595706DC725F} = {47F5A51E-6E99-4FB3-9A59-B0BB214DD6E9}
 	EndGlobalSection
 EndGlobal

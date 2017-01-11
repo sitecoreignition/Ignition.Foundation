@@ -38,6 +38,7 @@ namespace Ignition.Project.CompositionRoot
 					.Where(assembly => assembly.GetCustomAttributes(typeof(IgnitionAutomapAttribute)).Any())
 					.Where(a=>!assemblies.Contains(a))
 					.Select(a => Assembly.Load(a.FullName)));
+			assemblies.ForEach(a=>container.RegisterMvcControllers(a));
 			container.RegisterPackages(assemblies);
 			container.Verify();
 			return container;
