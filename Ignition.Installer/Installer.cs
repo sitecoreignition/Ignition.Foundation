@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ignition.Installer.IIS;
+using Ignition.Installer.SqlServer;
 
 namespace Ignition.Installer
 {
@@ -33,7 +34,7 @@ namespace Ignition.Installer
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-
+			//SqlServerWorker.RestoreDatabase("EXCALIBUR", "sa", "gd151Waite", "aetest", "E:\\Codelib\\alliant\\_publish\\_Db\\AESitecore_master.bak", "master", "f:\\db\\");
 		}
 
 		private void button3_Click(object sender, EventArgs e)

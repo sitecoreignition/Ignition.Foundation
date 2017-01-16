@@ -1,10 +1,4 @@
-﻿using System;
-using System.IO;
-using System.DirectoryServices;
-using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Collections;
-using Microsoft.Web.Administration;
+﻿using Microsoft.Web.Administration;
 
 namespace Ignition.Installer.IIS
 {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,29 +10,25 @@ using Microsoft.SqlServer.Management.Smo;
 
 namespace Ignition.Installer.SqlServer
 {
-	public class SqlServerWorker
+	public static class SqlServerWorker
 	{
-		public void Placeholder()
+
+		public static void RestoreDatabase(string siteName, string dbName, string backUpFile, string serverName, string userName, string password)
 		{
-			var smoServer = new Server(new ServerConnection(new SqlConnectionInfo {DatabaseName="master", UserName = "", Password = ""}));
-			
+			var smoServer = new Server(new ServerConnection(new SqlConnectionInfo { DatabaseName = "master", UserName = userName, Password = password }));
 
-			var db = smoServer.Databases["MyDataBase"];
-			var dbPath = Path.Combine(db.PrimaryFilePath, "MyDataBase.mdf");
-			var logPath = Path.Combine(db.PrimaryFilePath, "MyDataBase_Log.ldf");
-			var restore = new Restore();
-			var deviceItem = new BackupDeviceItem("d:\\MyDATA.BAK", DeviceType.File);
-			restore.Devices.Add(deviceItem);
-			restore.Database = "databseName";
-			restore.FileNumber = 0;
-			restore.Action = RestoreActionType.Database;
-			restore.ReplaceDatabase = true;
-			restore.SqlRestore(smoServer);
-
-			db = smoServer.Databases["MyDataBase"];
-			db.SetOnline();
-			smoServer.Refresh();
-			db.Refresh();
+			var name = $"{siteName}Sitecore_{dbName}";
+			var connection = new ServerConnection(serverName, userName, password);
+			var sqlServer = new Server(connection);
+			var rstDatabase = new Restore
+			{
+				Action = RestoreActionType.Database,
+				Database = name
+			};
+			var bkpDevice = new BackupDeviceItem(backUpFile, DeviceType.File);
+			rstDatabase.Devices.Add(bkpDevice);
+			rstDatabase.ReplaceDatabase = true;
+			rstDatabase.SqlRestore(sqlServer);
 		}
 	}
 }
