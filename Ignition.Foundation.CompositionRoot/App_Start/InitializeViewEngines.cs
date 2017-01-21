@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using Ignition.Foundation.Core.Mvc;
 using Sitecore.Pipelines;
 
-namespace Ignition.Project.CompositionRoot
+namespace Ignition.Foundation.CompositionRoot
 {
 	public class InitializeViewEngines
 	{

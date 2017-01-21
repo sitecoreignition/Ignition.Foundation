@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ignition.Project.CompositionRoot</RootNamespace>
-    <AssemblyName>Ignition.Project.CompositionRoot</AssemblyName>
+    <RootNamespace>Ignition.Foundation.CompositionRoot</RootNamespace>
+    <AssemblyName>Ignition.Foundation.CompositionRoot</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -60,16 +60,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.2.195\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Ignition.Foundation.Core, Version=1.0.6201.39736, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ignition.Foundation.Core.1.0.6201.39736\lib\net452\Ignition.Foundation.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Kamsar.WebConsole, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Kamsar.WebConsole.1.2.2.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MicroCHAP, Version=1.2.2.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MicroCHAP.1.2.2.2\lib\net45\MicroCHAP.dll</HintPath>
+    <Reference Include="Ignition.Foundation.Core, Version=1.0.6214.4381, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ignition.Foundation.Core.1.0.6214.4381\lib\net452\Ignition.Foundation.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -80,18 +72,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Rainbow, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Rainbow.Core.1.4.1\lib\net452\Rainbow.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Rainbow.Storage.Sc, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Rainbow.Storage.Sc.1.4.1\lib\net452\Rainbow.Storage.Sc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Rainbow.Storage.Yaml, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Rainbow.Storage.Yaml.1.4.1\lib\net452\Rainbow.Storage.Yaml.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="SimpleInjector, Version=3.3.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.3.3.2\lib\net45\SimpleInjector.dll</HintPath>
@@ -153,48 +133,17 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Unicorn, Version=3.3.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unicorn.Core.3.3.2\lib\net452\Unicorn.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
-    <Content Include="App_Config\Domain.config" />
     <Content Include="App_Config\Include\Ignition\Ignition.config" />
-    <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
+    <Content Include="packages.config" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.Start.config" />
-    <Content Include="App_Config\Include\Ignition\Ignition.CompositionRoot.Unicorn.config" />
-    <Content Include="App_Config\Include\Rainbow.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
-    <Content Include="App_Config\Include\Unicorn\_Unicorn.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
-    <None Include="App_Config\Include\Unicorn\Unicorn.SharedSecret.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="App_Config\Include\Unicorn\Unicorn.Remote.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <None Include="Properties\PublishProfiles\Debug.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\GlassMapperSc.cs" />
-    <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <AdditionalFiles Include="App_Start\GlassMapperScCustom.cs" />
     <Compile Include="App_Start\InitializeDependencyResolver.cs" />
     <Compile Include="App_Start\InitializeRoutes.cs" />
     <Compile Include="App_Start\InitializeViewEngines.cs" />

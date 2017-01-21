@@ -10,7 +10,7 @@ using Glass.Mapper.Sc.IoC;
 using Ignition.Foundation.Core.Attributes;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
-namespace Ignition.Project.CompositionRoot
+namespace $rootnamespace$
 {
 	public static class GlassMapperScCustom
 	{
@@ -20,8 +20,6 @@ namespace Ignition.Project.CompositionRoot
 			var assemblies = AppDomain.CurrentDomain.GetAssemblies()
 					.Where(assembly => assembly.GetCustomAttributes(typeof(IgnitionAutomapAttribute)).Any())
 					.Select(a => Assembly.Load(a.FullName)).ToList();
-			// ReSharper disable once CoVariantArrayConversion
-			// ReSharper disable once StringIndexOfIsCultureSpecific.1
 			return assemblies.Select(a => new SitecoreAttributeConfigurationLoader(a.GetName().ToString().Substring(0, a.GetName().ToString().IndexOf(",")))).ToArray();
 		}
 		public static void PostLoad() {}

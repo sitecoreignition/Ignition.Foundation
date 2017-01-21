@@ -9,7 +9,7 @@ using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.Web.Mvc;
 using Sitecore.Pipelines;
 
-namespace Ignition.Project.CompositionRoot
+namespace Ignition.Foundation.CompositionRoot
 {
 	public class InitializeDependencyResolver
 	{
