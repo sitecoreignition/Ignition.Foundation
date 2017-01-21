@@ -18,7 +18,4 @@
       <dependency id="Ignition.Foundation.Core" version="1.0" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="App_Start/GlassMapperScCustom.cs" target="content/App_Start/GlassMapperScCustom.cs.pp" />
-  </files>
 </package>
