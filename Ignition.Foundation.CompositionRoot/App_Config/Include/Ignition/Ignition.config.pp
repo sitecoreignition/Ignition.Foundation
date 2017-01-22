@@ -18,6 +18,7 @@
 			  patch:after="processor[@type='Sitecore.Pipelines.GetChromeData.GetPlaceholderChromeData, Sitecore.Kernel']"/>
 		</getChromeData>
 		<initialize>
+        <processor type="Ignition.Foundation.CompositionRoot.IgnitionGlassLoaders, Ignition.Foundation.CompositionRoot" patch:after="processor[@type='$rootnamespace$.App_Start.GlassMapperSc, $assemblyname$']"/>
         <processor type="Ignition.Foundation.CompositionRoot.InitializeDependencyResolver, Ignition.Foundation.CompositionRoot" patch:before="processor[@type='Sitecore.Mvc.Pipelines.Loader.InitializeControllerFactory, Sitecore.Mvc']"/>
         <processor type="Ignition.Foundation.CompositionRoot.InitializeViewEngines, Ignition.Foundation.CompositionRoot" patch:after="processor[@type='Sitecore.Mvc.Pipelines.Loader.InitializeRoutes, Sitecore.Mvc']"/>
         <processor type="Ignition.Foundation.CompositionRoot.InitializeRoutes, Ignition.Foundation.CompositionRoot" patch:after="processor[@type='Sitecore.Mvc.Pipelines.Loader.InitializeGlobalFilters, Sitecore.Mvc']"/>
