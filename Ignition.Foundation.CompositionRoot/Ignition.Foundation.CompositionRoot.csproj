@@ -135,15 +135,17 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Ignition\Ignition.config.pp" />
+    <None Include="App_Config\Include\Ignition\Ignition.config" />
     <Content Include="packages.config" />
+    <Compile Include="App_Start\GlassMapperScCustom.cs" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\Debug.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\IgnitionGlassLoaders.cs" />
+    <Compile Include="App_Start\GlassMapperSc.cs" />
+    <Compile Include="App_Start\IGlassSettingsConsumer.cs" />
     <Compile Include="App_Start\InitializeDependencyResolver.cs" />
     <Compile Include="App_Start\InitializeRoutes.cs" />
     <Compile Include="App_Start\InitializeViewEngines.cs" />
