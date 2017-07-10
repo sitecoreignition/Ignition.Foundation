@@ -17,7 +17,7 @@ namespace Ignition.Foundation.Core.SimpleInjector
 
         private bool IsCalledDuringRegistrationPhase => !_container.IsLocked();
 
-        public ConstructorInfo GetConstructor(Type service, Type implementation)
+        public ConstructorInfo GetConstructor(Type implementation)
         {
             var constructors = implementation.GetConstructors();
             if (!constructors.Any()) return null;
@@ -25,20 +25,20 @@ namespace Ignition.Foundation.Core.SimpleInjector
             return constructors.Select(constructor => new {constructor, parameters = constructor.GetParameters()})
 	            .Where(t => IsCalledDuringRegistrationPhase
 	                         || constructors.Length == 1
-	                         || t.parameters.All(p => CanBeResolved(p, service, implementation)))
+	                         || t.parameters.All(CanBeResolved))
 	            .OrderByDescending(t => t.parameters.Length)
 	            .Select(t => t.constructor)
                 .First();
         }
-        private bool CanBeResolved(ParameterInfo p, Type service, Type implementation)
+        private bool CanBeResolved(ParameterInfo p)
         {
-            return _container.GetRegistration(p.ParameterType) != null || CanBuildType(p, service, implementation);
+            return _container.GetRegistration(p.ParameterType) != null || CanBuildType(p);
         }
-        private bool CanBuildType(ParameterInfo p, Type service, Type implementation)
+        private bool CanBuildType(ParameterInfo p)
         {
             try
             {
-                _container.Options.DependencyInjectionBehavior.BuildExpression(new InjectionConsumerInfo(service, implementation, p));
+                _container.Options.DependencyInjectionBehavior.GetInstanceProducer(new InjectionConsumerInfo(p), false);
                 return true;
             }
             catch (ActivationException)
