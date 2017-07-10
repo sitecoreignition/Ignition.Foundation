@@ -11,12 +11,13 @@
     <iconUrl>http://www.perficient.com/-/media/images/ignition/ignition.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An open source development accelerator designed by the team at Perficient and released to the Sitecore community as a quick-start tool for beginning Sitecore projects.</description>
-    <releaseNotes>Initial Release</releaseNotes>
+    <releaseNotes>Updated for newer dependencies and SimpleInjector 4.</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>ignition sitecore accelerator framework helix habitat</tags>
     <dependencies>
+      <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
       <dependency id="Glass.Mapper.Sc.Core" version="4.4" />
-      <dependency id="SimpleInjector" version="4.0" />
+      <dependency id="SimpleInjector" version="4.0.8" />
     </dependencies>
   </metadata>
 </package>
