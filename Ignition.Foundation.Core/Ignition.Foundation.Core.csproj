@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\IgnitionAutomapAttribute.cs" />
+    <Compile Include="DataMappers\MultilineFieldStringMapper.cs" />
     <Compile Include="Models\IGlassItem.cs" />
     <Compile Include="Factories\IDatabaseType.cs" />
     <Compile Include="Factories\ISitecoreSettingsFactory.cs" />

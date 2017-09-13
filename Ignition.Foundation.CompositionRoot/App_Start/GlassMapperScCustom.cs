@@ -10,12 +10,19 @@ using Glass.Mapper.Sc.IoC;
 using Ignition.Foundation.Core.Attributes;
 using Ignition.Foundation.Core.Factories;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
+using Ignition.Foundation.Core.DataMappers;
 
 namespace Ignition.Foundation.CompositionRoot
 {
     public static class GlassMapperScCustom
     {
-        public static IDependencyResolver CreateResolver() => new DependencyResolver(new Config());
+        public static IDependencyResolver CreateResolver()
+        {
+            var resolver = new DependencyResolver(new Config());
+            resolver.DataMapperFactory.Insert(0, () => new MultiLineFieldStringMapper());
+            return resolver;
+        }
+
         public static IConfigurationLoader[] GlassLoaders()
         {
             // ReSharper disable once CoVariantArrayConversion

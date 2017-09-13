@@ -25,6 +25,7 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,9 +59,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.4.0.199\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Ignition.Foundation.Core, Version=1.0.6238.38742, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ignition.Foundation.Core.1.0.0.5330\lib\net452\Ignition.Foundation.Core.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -84,6 +82,9 @@
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.161115\lib\NET452\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.NoReferences.8.2.161115\lib\NET452\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
@@ -143,7 +144,12 @@
     <Compile Include="App_Start\InitializeViewEngines.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Ignition.Foundation.Core\Ignition.Foundation.Core.csproj">
+      <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
+      <Name>Ignition.Foundation.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -24,7 +24,7 @@ namespace Ignition.Foundation.Core.Mvc
 		    factory(datasourceItem);
 			return View(datasourceItem);
 	    }
-		protected JsonResult Json<TViewModel, TRequestModel>(Action<TViewModel,TRequestModel> factory, TRequestModel model)
+        protected JsonResult Json<TViewModel, TRequestModel>(Action<TViewModel,TRequestModel> factory, TRequestModel model)
 			where TViewModel : IgnitionViewModel, new()
 		{
 			var datasourceItem = RouteData.Values.ContainsKey("scIsFallThrough") ? GetLayoutItem<TViewModel>(false, true) : new TViewModel();

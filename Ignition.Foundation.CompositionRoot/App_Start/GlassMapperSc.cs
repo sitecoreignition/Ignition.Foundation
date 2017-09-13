@@ -8,6 +8,7 @@ using Glass.Mapper;
 using Glass.Mapper.Maps;
 using Glass.Mapper.Sc.Configuration.Fluent;
 using Glass.Mapper.Sc.IoC;
+using Glass.Mapper.Sc.Pipelines.GetChromeData;
 using Sitecore.Pipelines;
 
 // WebActivator has been removed. If you wish to continue using WebActivator uncomment the line below
@@ -29,6 +30,7 @@ namespace Ignition.Foundation.CompositionRoot
             LoadConfigurationMaps(resolver, context);
             context?.Load(GlassMapperScCustom.GlassLoaders());
             GlassMapperScCustom.PostLoad();
+            EditFrameBuilder.EditFrameItemPrefix = "Ignition-";
         }
 
         public static void LoadConfigurationMaps(Glass.Mapper.IoC.IDependencyResolver resolver, Context context)
