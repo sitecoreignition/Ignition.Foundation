@@ -30,7 +30,6 @@ namespace Ignition.Foundation.CompositionRoot
             LoadConfigurationMaps(resolver, context);
             context?.Load(GlassMapperScCustom.GlassLoaders());
             GlassMapperScCustom.PostLoad();
-            EditFrameBuilder.EditFrameItemPrefix = "Ignition-";
         }
 
         public static void LoadConfigurationMaps(Glass.Mapper.IoC.IDependencyResolver resolver, Context context)
