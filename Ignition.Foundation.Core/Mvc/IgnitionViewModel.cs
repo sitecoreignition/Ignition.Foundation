@@ -1,6 +1,5 @@
 ﻿using System.Collections.Specialized;
 using Glass.Mapper.Sc.Configuration.Attributes;
-using Ignition.Foundation.Core.Models.BaseModels;
 
 namespace Ignition.Foundation.Core.Mvc
 {

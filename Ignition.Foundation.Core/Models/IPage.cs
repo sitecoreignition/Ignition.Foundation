@@ -1,4 +1,4 @@
-﻿namespace Ignition.Foundation.Core.Models.BaseModels
+﻿namespace Ignition.Foundation.Core.Models
 {
 	public interface IPage 
 	{
