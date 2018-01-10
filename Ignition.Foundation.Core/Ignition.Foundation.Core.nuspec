@@ -16,7 +16,7 @@
     <tags>ignition sitecore accelerator framework helix habitat</tags>
     <dependencies>
       <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
-      <dependency id="Glass.Mapper.Sc.Core" version="4.4" />
+      <dependency id="Glass.Mapper.Sc.Core" version="4.5.0.4" />
       <dependency id="SimpleInjector" version="4.0.8" />
     </dependencies>
   </metadata>
