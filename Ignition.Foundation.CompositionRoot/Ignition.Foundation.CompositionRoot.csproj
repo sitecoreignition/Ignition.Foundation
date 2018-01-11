@@ -78,11 +78,11 @@
     <Reference Include="SimpleInjector.Packaging, Version=4.0.8.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.Packaging.4.0.8\lib\net40\SimpleInjector.Packaging.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.161115\lib\NET452\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Kernel.NoReferences.9.0.171002\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.NoReferences.8.2.161115\lib\NET452\Sitecore.Mvc.dll</HintPath>
+    <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.NoReferences.9.0.171002\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
