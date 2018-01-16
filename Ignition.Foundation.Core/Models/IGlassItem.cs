@@ -10,10 +10,9 @@ using Sitecore.Globalization;
 
 namespace Ignition.Foundation.Core.Models
 {
-	[SitecoreType(TemplateId= "{4C3CDC24-1610-4808-92A3-A221768AE3B2}", AutoMap = true)]
+	[SitecoreType(TemplateId = "{4C3CDC24-1610-4808-92A3-A221768AE3B2}", AutoMap = true)]
 	public interface IGlassItem
 	{
-
 		[SitecoreId, IndexField("_group")]
 		Guid Id { get; set; }
 

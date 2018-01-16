@@ -1,6 +1,6 @@
 ﻿namespace Ignition.Foundation.Core.Models
 {
-	public interface IPage 
+	public interface IPage
 	{
 	}
 }

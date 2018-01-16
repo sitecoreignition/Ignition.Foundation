@@ -3,8 +3,8 @@ using Sitecore.Pipelines;
 
 namespace Ignition.Foundation.Core.GlassMapper.Pipelines
 {
-  public class PostLoadPipelineArgs : PipelineArgs
-  {
-    public IDependencyResolver DependencyResolver { get; set; }
-  }
+	public class PostLoadPipelineArgs : PipelineArgs
+	{
+		public IDependencyResolver DependencyResolver { get; set; }
+	}
 }

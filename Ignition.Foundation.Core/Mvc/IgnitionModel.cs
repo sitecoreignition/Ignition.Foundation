@@ -36,7 +36,7 @@ namespace Ignition.Foundation.Core.Mvc
 		[SitecoreInfo(SitecoreInfoType.Url)]
 		public virtual string Url { get; set; }
 
-        [SitecoreInfo(SitecoreInfoType.TemplateId), IndexField("_template")]
-        public virtual Guid TemplateId { get; set; }
+		[SitecoreInfo(SitecoreInfoType.TemplateId), IndexField("_template")]
+		public virtual Guid TemplateId { get; set; }
 	}
 }

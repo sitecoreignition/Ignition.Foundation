@@ -7,31 +7,31 @@ using Sitecore.Data.Fields;
 
 namespace Ignition.Foundation.Core.GlassMapper.DataMappers
 {
-    public class MultiLineFieldStringMapper : SitecoreFieldStringMapper
-    {
-        private static readonly ConcurrentDictionary<Guid, bool> IsMultiLineDictionary = new ConcurrentDictionary<Guid, bool>();
+	public class MultiLineFieldStringMapper : SitecoreFieldStringMapper
+	{
+		private static readonly ConcurrentDictionary<Guid, bool> IsMultiLineDictionary = new ConcurrentDictionary<Guid, bool>();
 
-        public override object GetField(Field field, SitecoreFieldConfiguration config,
-            SitecoreDataMappingContext context)
-        {
-            var value = (string)base.GetField(field, config, context);
+		public override object GetField(Field field, SitecoreFieldConfiguration config,
+			SitecoreDataMappingContext context)
+		{
+			var value = (string)base.GetField(field, config, context);
 
-            var guid = field.ID.Guid;
-            if (IsMultiLineDictionary.ContainsKey(guid) && IsMultiLineDictionary[guid])
-                return FixMultiLineFieldLineBreaks(value);
+			var guid = field.ID.Guid;
+			if (IsMultiLineDictionary.ContainsKey(guid) && IsMultiLineDictionary[guid])
+				return FixMultiLineFieldLineBreaks(value);
 
-            var isMultiLine = field.TypeKey == "multi-line text";
-            IsMultiLineDictionary.TryAdd(guid, isMultiLine);
+			var isMultiLine = field.TypeKey == "multi-line text";
+			IsMultiLineDictionary.TryAdd(guid, isMultiLine);
 
-            if (!isMultiLine)
-                return value;
+			if (!isMultiLine)
+				return value;
 
-            return FixMultiLineFieldLineBreaks(value);
-        }
+			return FixMultiLineFieldLineBreaks(value);
+		}
 
-        private static string FixMultiLineFieldLineBreaks(string value)
-        {
-            return value?.Replace("\r\n", "<br />");
-        }
-    }
+		private static string FixMultiLineFieldLineBreaks(string value)
+		{
+			return value?.Replace("\r\n", "<br />");
+		}
+	}
 }

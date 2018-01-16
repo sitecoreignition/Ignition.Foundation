@@ -2,8 +2,8 @@
 
 namespace Ignition.Foundation.Core.GlassMapper
 {
-    public interface IGlassSettingsConsumer
-    {
-        ISitecoreSettingsFactory SettingsFactory { get; set; }
-    }
+	public interface IGlassSettingsConsumer
+	{
+		ISitecoreSettingsFactory SettingsFactory { get; set; }
+	}
 }
