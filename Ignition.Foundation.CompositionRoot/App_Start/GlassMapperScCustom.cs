@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using System.Reflection;
 using Glass.Mapper.Configuration;
 using Glass.Mapper.IoC;
 using Glass.Mapper.Maps;
@@ -29,9 +28,11 @@ namespace Ignition.Foundation.CompositionRoot
 
     public static IConfigurationLoader[] GlassLoaders()
     {
-      // ReSharper disable once CoVariantArrayConversion
+      var automappedAssemblies = IgnitionAutomapHelper.GetAutomappedAssembliesInCurrentDomain();
       // ReSharper disable once StringIndexOfIsCultureSpecific.1
-      return AppDomain.CurrentDomain.GetAssemblies().Where(assembly => assembly.GetCustomAttributes(typeof(IgnitionAutomapAttribute)).Any()).ToList().Select(a => Assembly.Load(a.FullName)).Select(a => new SitecoreAttributeConfigurationLoader(a.GetName().ToString().Substring(0, a.GetName().ToString().IndexOf(",")))).ToArray();
+      var automappedLoaders = automappedAssemblies.Select(a => new SitecoreAttributeConfigurationLoader(a.GetName().ToString().Substring(0, a.GetName().ToString().IndexOf(","))));
+      // ReSharper disable once CoVariantArrayConversion
+      return automappedLoaders.ToArray();
     }
 
     public static void PostLoad(IDependencyResolver dependencyResolver)
@@ -41,11 +42,8 @@ namespace Ignition.Foundation.CompositionRoot
     public static void AddMaps(IConfigFactory<IGlassMap> mapsConfigFactory)
     {
       var factory = new SitecoreSettingsFactory();
-      //Load referenced assemblies
-      var assemblies = Assembly.GetExecutingAssembly().GetReferencedAssemblies().Select(Assembly.Load).ToList();
-      //load possible standalone assemblies
-      assemblies.AddRange(AppDomain.CurrentDomain.GetAssemblies().Where(assembly => assembly.GetCustomAttributes(typeof(IgnitionAutomapAttribute)).Any()).Where(a => !assemblies.Contains(a)).Select(a => Assembly.Load(a.FullName)));
-      var manyTypes = assemblies.SelectMany(s => s.GetTypes());
+      var automappedAssemblies = IgnitionAutomapHelper.GetAutomappedAssemblies();
+      var manyTypes = automappedAssemblies.SelectMany(s => s.GetTypes());
       var filteredTypes = manyTypes.Where(p => typeof(IGlassMap).IsAssignableFrom(p) && !p.IsAbstract && !p.IsInterface)
        .ToList();
       filteredTypes.ForEach(a => mapsConfigFactory.Add(() =>

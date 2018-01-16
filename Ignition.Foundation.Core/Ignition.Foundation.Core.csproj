@@ -104,6 +104,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Automap\IgnitionAutomapHelper.cs" />
     <Compile Include="Automap\IgnitionAutomapAttribute.cs" />
     <Compile Include="GlassMapper\DataMappers\MultilineFieldStringMapper.cs" />
     <Compile Include="DependencyInjection\ServiceCollectionExtensions.cs" />

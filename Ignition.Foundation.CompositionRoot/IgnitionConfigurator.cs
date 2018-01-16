@@ -13,19 +13,12 @@ namespace Ignition.Foundation.CompositionRoot
   {
     public void Configure(IServiceCollection serviceCollection)
     {
-      var assemblies = Assembly.GetExecutingAssembly().GetReferencedAssemblies().Select(Assembly.Load).ToList();
-
-      //load possible standalone assemblies
-      assemblies.AddRange(AppDomain.CurrentDomain.GetAssemblies()
-        .Where(assembly => assembly.GetCustomAttributes(typeof(IgnitionAutomapAttribute)).Any())
-        .Where(a => !assemblies.Contains(a))
-        .Select(a => Assembly.Load(a.FullName)));
-
-      foreach (var assembly in assemblies)
+      var automappedAssemblies = IgnitionAutomapHelper.GetAutomappedAssemblies();
+      foreach (var automappedAssembly in automappedAssemblies)
       {
-        serviceCollection.AddMvcControllers(assembly);
+        serviceCollection.AddMvcControllers(automappedAssembly);
 
-        var configuratorTypes = GetServicesConfiguratorTypesFromAssembly(assembly);
+        var configuratorTypes = GetServicesConfiguratorTypesFromAssembly(automappedAssembly);
         foreach (var configuratorType in configuratorTypes)
         {
           var configurator = (IServicesConfigurator)Activator.CreateInstance(configuratorType);
