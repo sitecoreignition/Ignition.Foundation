@@ -5,7 +5,7 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.DataMappers;
 using Sitecore.Data.Fields;
 
-namespace Ignition.Foundation.Core.DataMappers
+namespace Ignition.Foundation.Core.GlassMapper.DataMappers
 {
     public class MultiLineFieldStringMapper : SitecoreFieldStringMapper
     {

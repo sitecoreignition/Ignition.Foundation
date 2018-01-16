@@ -129,7 +129,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
-    <Compile Include="App_Start\IGlassSettingsConsumer.cs" />
     <Compile Include="App_Start\InitializeRoutes.cs" />
     <Compile Include="App_Start\InitializeViewEngines.cs" />
     <Compile Include="DependencyInjection\ServiceCollectionExtensions.cs" />

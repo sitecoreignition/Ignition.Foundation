@@ -1,6 +1,6 @@
 ﻿using Ignition.Foundation.Core.Factories;
 
-namespace Ignition.Foundation.CompositionRoot
+namespace Ignition.Foundation.Core.GlassMapper
 {
     public interface IGlassSettingsConsumer
     {

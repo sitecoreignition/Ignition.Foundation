@@ -8,8 +8,9 @@ using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.IoC;
 using Ignition.Foundation.Core.Attributes;
-using Ignition.Foundation.Core.DataMappers;
 using Ignition.Foundation.Core.Factories;
+using Ignition.Foundation.Core.GlassMapper;
+using Ignition.Foundation.Core.GlassMapper.DataMappers;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
 namespace Ignition.Foundation.CompositionRoot

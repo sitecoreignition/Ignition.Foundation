@@ -105,8 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\IgnitionAutomapAttribute.cs" />
-    <Compile Include="DataMappers\MultilineFieldStringMapper.cs" />
+    <Compile Include="GlassMapper\DataMappers\MultilineFieldStringMapper.cs" />
     <Compile Include="DependencyInjection\ServiceCollectionExtensions.cs" />
+    <Compile Include="GlassMapper\IGlassSettingsConsumer.cs" />
     <Compile Include="IgnitionCoreConfigurator.cs" />
     <Compile Include="Models\IGlassItem.cs" />
     <Compile Include="Factories\IDatabaseType.cs" />
