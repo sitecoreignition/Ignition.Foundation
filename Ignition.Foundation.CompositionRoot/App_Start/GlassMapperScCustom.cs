@@ -35,6 +35,8 @@ namespace Ignition.Foundation.CompositionRoot
 
     public static void PostLoad(IDependencyResolver dependencyResolver)
     {
+      var pipelineArgs = new PostLoadPipelineArgs { DependencyResolver = dependencyResolver };
+      PostLoadPipeline.Run(pipelineArgs);
     }
 
     public static void AddMaps(IConfigFactory<IGlassMap> mapsConfigFactory)
