@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
+    <Compile Include="Pipelines\GlassMapper\CreateResolver\AddDataMapperFactories.cs" />
     <Compile Include="Pipelines\Initialize\InitializeRoutes.cs" />
     <Compile Include="Pipelines\Initialize\InitializeViewEngines.cs" />
     <Compile Include="DependencyInjection\ServiceCollectionExtensions.cs" />

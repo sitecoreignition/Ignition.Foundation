@@ -9,7 +9,7 @@ using Glass.Mapper.Sc.IoC;
 using Ignition.Foundation.Core.Automap;
 using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.GlassMapper;
-using Ignition.Foundation.Core.GlassMapper.DataMappers;
+using Ignition.Foundation.Core.GlassMapper.Pipelines;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
 namespace Ignition.Foundation.CompositionRoot
@@ -20,7 +20,8 @@ namespace Ignition.Foundation.CompositionRoot
     {
       var dependencyResolver = new DependencyResolver(new Config());
 
-      dependencyResolver.DataMapperFactory.Insert(0, () => new MultiLineFieldStringMapper());
+      var pipelineArgs = new CreateResolverPipelineArgs { DependencyResolver = dependencyResolver };
+      CreateResolverPipeline.Run(pipelineArgs);
 
       dependencyResolver.Finalise();
       return dependencyResolver;
