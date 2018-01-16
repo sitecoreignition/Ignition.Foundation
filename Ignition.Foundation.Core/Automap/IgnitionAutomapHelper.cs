@@ -9,7 +9,10 @@ namespace Ignition.Foundation.Core.Automap
   {
     public static IEnumerable<Assembly> GetAutomappedAssemblies()
     {
-      var automappedAssemblies = Assembly.GetExecutingAssembly().GetReferencedAssemblies().Select(Assembly.Load).ToList();
+      var automappedAssemblies = Assembly.GetExecutingAssembly().GetReferencedAssemblies()
+        .Select(Assembly.Load)
+        .Where(IsAutomappedAssembly)
+        .ToList();
 
       // load possible standalone assemblies
       automappedAssemblies.AddRange(AppDomain.CurrentDomain.GetAssemblies()
