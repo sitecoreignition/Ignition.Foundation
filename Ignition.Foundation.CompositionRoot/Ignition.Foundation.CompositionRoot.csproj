@@ -129,8 +129,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
-    <Compile Include="App_Start\InitializeRoutes.cs" />
-    <Compile Include="App_Start\InitializeViewEngines.cs" />
+    <Compile Include="Pipelines\Initialize\InitializeRoutes.cs" />
+    <Compile Include="Pipelines\Initialize\InitializeViewEngines.cs" />
     <Compile Include="DependencyInjection\ServiceCollectionExtensions.cs" />
     <Compile Include="IgnitionConfigurator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

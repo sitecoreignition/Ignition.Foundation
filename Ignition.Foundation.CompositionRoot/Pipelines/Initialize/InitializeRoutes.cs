@@ -3,7 +3,7 @@ using System.Web.Routing;
 using Ignition.Foundation.Core.Mvc.Routing;
 using Sitecore.Pipelines;
 
-namespace Ignition.Foundation.CompositionRoot
+namespace Ignition.Foundation.CompositionRoot.Pipelines.Initialize
 {
 	public class InitializeRoutes
 	{
