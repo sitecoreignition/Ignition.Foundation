@@ -113,6 +113,9 @@
     <Compile Include="GlassMapper\Pipelines\CreateResolverPipeline.cs" />
     <Compile Include="GlassMapper\Pipelines\CreateResolverPipelineArgs.cs" />
     <Compile Include="GlassMapper\Pipelines\CreateResolverProcessor.cs" />
+    <Compile Include="GlassMapper\Pipelines\GetGlassLoadersPipeline.cs" />
+    <Compile Include="GlassMapper\Pipelines\GetGlassLoadersPipelineArgs.cs" />
+    <Compile Include="GlassMapper\Pipelines\GetGlassLoadersProcessor.cs" />
     <Compile Include="IgnitionCoreConfigurator.cs" />
     <Compile Include="Models\IGlassItem.cs" />
     <Compile Include="Factories\IDatabaseType.cs" />

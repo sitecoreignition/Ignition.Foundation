@@ -4,7 +4,6 @@ using Glass.Mapper.Configuration;
 using Glass.Mapper.IoC;
 using Glass.Mapper.Maps;
 using Glass.Mapper.Sc;
-using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.IoC;
 using Ignition.Foundation.Core.Automap;
 using Ignition.Foundation.Core.Factories;
@@ -29,11 +28,9 @@ namespace Ignition.Foundation.CompositionRoot
 
     public static IConfigurationLoader[] GlassLoaders()
     {
-      var automappedAssemblies = IgnitionAutomapHelper.GetAutomappedAssembliesInCurrentDomain();
-      // ReSharper disable once StringIndexOfIsCultureSpecific.1
-      var automappedLoaders = automappedAssemblies.Select(a => new SitecoreAttributeConfigurationLoader(a.GetName().ToString().Substring(0, a.GetName().ToString().IndexOf(","))));
-      // ReSharper disable once CoVariantArrayConversion
-      return automappedLoaders.ToArray();
+      var pipelineArgs = new GetGlassLoadersPipelineArgs();
+      GetGlassLoadersPipeline.Run(pipelineArgs);
+      return pipelineArgs.GlassLoaders.ToArray();
     }
 
     public static void PostLoad(IDependencyResolver dependencyResolver)
