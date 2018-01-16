@@ -4,6 +4,6 @@
 	{
 	}
 	//Display [FieldId,Tree,root=/sitecore/templates,Field] as [FieldName,,,value]
-	 //RuleAction
-	 //WhenField
+	//RuleAction
+	//WhenField
 }

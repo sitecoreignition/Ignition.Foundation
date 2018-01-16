@@ -17,9 +17,10 @@ using Sitecore.Pipelines;
 
 namespace Ignition.FormIgnition.Sc.App_Start
 {
-	public class  GlassMapperSc
+	public class GlassMapperSc
 	{
-		public void Process(PipelineArgs args){
+		public void Process(PipelineArgs args)
+		{
 			GlassMapperSc.Start();
 		}
 
@@ -33,33 +34,33 @@ namespace Ignition.FormIgnition.Sc.App_Start
 
 			LoadConfigurationMaps(resolver, context);
 
-			context.Load(      
-				GlassMapperScCustom.GlassLoaders()        				
+			context.Load(
+				GlassMapperScCustom.GlassLoaders()
 				);
 
 			GlassMapperScCustom.PostLoad();
 
 			//EditFrameBuilder.EditFrameItemPrefix = "Glass-";
 
-        }
+		}
 
-        public static void LoadConfigurationMaps(IDependencyResolver resolver, Glass.Mapper.Context context)
-        {
-            var dependencyResolver = resolver as DependencyResolver;
-            if (dependencyResolver == null)
-            {
-                return;
-            }
+		public static void LoadConfigurationMaps(IDependencyResolver resolver, Glass.Mapper.Context context)
+		{
+			var dependencyResolver = resolver as DependencyResolver;
+			if (dependencyResolver == null)
+			{
+				return;
+			}
 
-            if (dependencyResolver.ConfigurationMapFactory is ConfigurationMapConfigFactory)
-            {
-                GlassMapperScCustom.AddMaps(dependencyResolver.ConfigurationMapFactory);
-            }
+			if (dependencyResolver.ConfigurationMapFactory is ConfigurationMapConfigFactory)
+			{
+				GlassMapperScCustom.AddMaps(dependencyResolver.ConfigurationMapFactory);
+			}
 
-            IConfigurationMap configurationMap = new ConfigurationMap(dependencyResolver);
-            SitecoreFluentConfigurationLoader configurationLoader = configurationMap.GetConfigurationLoader<SitecoreFluentConfigurationLoader>();
-            context.Load(configurationLoader);
-        }
+			IConfigurationMap configurationMap = new ConfigurationMap(dependencyResolver);
+			SitecoreFluentConfigurationLoader configurationLoader = configurationMap.GetConfigurationLoader<SitecoreFluentConfigurationLoader>();
+			context.Load(configurationLoader);
+		}
 	}
 }
 #endregion

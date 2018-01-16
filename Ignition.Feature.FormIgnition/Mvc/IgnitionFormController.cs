@@ -24,7 +24,7 @@ namespace Ignition.FormIgnition.Sc.Mvc
 		/// <param name="processor"></param>
 		/// <returns></returns>
 		public ViewResult Form<TFormEndpoint, TFormGetProcessor, TAgent, TViewModel>(
-			TFormEndpoint endPoint, 
+			TFormEndpoint endPoint,
 			TFormGetProcessor processor)
 			where TFormEndpoint : IFormEndpoint
 			where TFormGetProcessor : IFormGetProcessor
@@ -46,8 +46,8 @@ namespace Ignition.FormIgnition.Sc.Mvc
 		/// <param name="postProcessor"></param>
 		/// <returns></returns>
 		public ActionResult Submit<TFormEndPoint, TFormGetProcessor, TFormPostProcessor>(
-			TFormEndPoint endpoint, 
-			TFormGetProcessor getProcessor, 
+			TFormEndPoint endpoint,
+			TFormGetProcessor getProcessor,
 			TFormPostProcessor postProcessor)
 			where TFormEndPoint : IFormEndpoint
 			where TFormGetProcessor : IFormGetProcessor

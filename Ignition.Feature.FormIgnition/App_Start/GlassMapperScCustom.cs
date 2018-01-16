@@ -7,9 +7,10 @@ using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
 namespace Ignition.FormIgnition.Sc.App_Start
 {
-    public static  class GlassMapperScCustom
-    {
-		public static IDependencyResolver CreateResolver(){
+	public static class GlassMapperScCustom
+	{
+		public static IDependencyResolver CreateResolver()
+		{
 			var config = new Glass.Mapper.Sc.Config();
 
 			var dependencyResolver = new DependencyResolver(config);
@@ -17,17 +18,19 @@ namespace Ignition.FormIgnition.Sc.App_Start
 			return dependencyResolver;
 		}
 
-		public static IConfigurationLoader[] GlassLoaders(){			
-			
+		public static IConfigurationLoader[] GlassLoaders()
+		{
+
 			/* USE THIS AREA TO ADD FLUENT CONFIGURATION LOADERS
              * 
              * If you are using Attribute Configuration or automapping/on-demand mapping you don't need to do anything!
              * 
              */
 
-			return new IConfigurationLoader[]{};
+			return new IConfigurationLoader[] { };
 		}
-		public static void PostLoad(){
+		public static void PostLoad()
+		{
 			//Remove the comments to activate CodeFist
 			/* CODE FIRST START
             var dbs = Sitecore.Configuration.Factory.GetDatabases();
@@ -46,10 +49,10 @@ namespace Ignition.FormIgnition.Sc.App_Start
              */
 		}
 		public static void AddMaps(IConfigFactory<IGlassMap> mapsConfigFactory)
-        {
+		{
 			// Add maps here
-            // mapsConfigFactory.Add(() => new SeoMap());
-        }
-    }
+			// mapsConfigFactory.Add(() => new SeoMap());
+		}
+	}
 }
 #endregion
