@@ -1,13 +1,8 @@
-using System;
-using System.Linq;
 using Glass.Mapper.Configuration;
 using Glass.Mapper.IoC;
 using Glass.Mapper.Maps;
 using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.IoC;
-using Ignition.Foundation.Core.Automap;
-using Ignition.Foundation.Core.Factories;
-using Ignition.Foundation.Core.GlassMapper;
 using Ignition.Foundation.Core.GlassMapper.Pipelines;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
@@ -41,18 +36,8 @@ namespace Ignition.Foundation.CompositionRoot
 
     public static void AddMaps(IConfigFactory<IGlassMap> mapsConfigFactory)
     {
-      var factory = new SitecoreSettingsFactory();
-      var automappedAssemblies = IgnitionAutomapHelper.GetAutomappedAssemblies();
-      var manyTypes = automappedAssemblies.SelectMany(s => s.GetTypes());
-      var filteredTypes = manyTypes.Where(p => typeof(IGlassMap).IsAssignableFrom(p) && !p.IsAbstract && !p.IsInterface)
-       .ToList();
-      filteredTypes.ForEach(a => mapsConfigFactory.Add(() =>
-      {
-        var mapper = (IGlassMap)Activator.CreateInstance(a);
-        var setting = mapper as IGlassSettingsConsumer;
-        if (setting != null) setting.SettingsFactory = factory;
-        return (IGlassMap)setting ?? mapper;
-      }));
+      var pipelineArgs = new AddMapsPipelineArgs { MapsConfigFactory = mapsConfigFactory };
+      AddMapsPipeline.Run(pipelineArgs);
     }
   }
 }

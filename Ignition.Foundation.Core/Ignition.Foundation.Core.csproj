@@ -109,6 +109,9 @@
     <Compile Include="GlassMapper\DataMappers\MultilineFieldStringMapper.cs" />
     <Compile Include="DependencyInjection\ServiceCollectionExtensions.cs" />
     <Compile Include="GlassMapper\IGlassSettingsConsumer.cs" />
+    <Compile Include="GlassMapper\Pipelines\AddMapsPipeline.cs" />
+    <Compile Include="GlassMapper\Pipelines\AddMapsPipelineArgs.cs" />
+    <Compile Include="GlassMapper\Pipelines\AddMapsProcessor.cs" />
     <Compile Include="GlassMapper\Pipelines\Constants.cs" />
     <Compile Include="GlassMapper\Pipelines\CreateResolverPipeline.cs" />
     <Compile Include="GlassMapper\Pipelines\CreateResolverPipelineArgs.cs" />
