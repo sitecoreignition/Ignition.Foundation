@@ -104,7 +104,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\IgnitionAutomapAttribute.cs" />
+    <Compile Include="Automap\IgnitionAutomapAttribute.cs" />
     <Compile Include="GlassMapper\DataMappers\MultilineFieldStringMapper.cs" />
     <Compile Include="DependencyInjection\ServiceCollectionExtensions.cs" />
     <Compile Include="GlassMapper\IGlassSettingsConsumer.cs" />

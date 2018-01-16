@@ -7,7 +7,7 @@ using Glass.Mapper.Maps;
 using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.IoC;
-using Ignition.Foundation.Core.Attributes;
+using Ignition.Foundation.Core.Automap;
 using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.GlassMapper;
 using Ignition.Foundation.Core.GlassMapper.DataMappers;
