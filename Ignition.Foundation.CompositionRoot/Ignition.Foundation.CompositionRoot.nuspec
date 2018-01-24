@@ -6,8 +6,8 @@
 		<title>$title$</title>
 		<authors>Perficient</authors>
 		<owners>Perficient</owners>
-		<licenseUrl>https://raw.githubusercontent.com/sitecoreignition/SitecoreIgnition/develop/LICENSE</licenseUrl>
-		<projectUrl>https://github.com/sitecoreignition/SitecoreIgnition</projectUrl>
+		<licenseUrl>https://github.com/sitecoreignition/Ignition.Foundation/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/sitecoreignition/Ignition.Foundation</projectUrl>
 		<iconUrl>http://www.perficient.com/-/media/images/ignition/ignition.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>An open source development accelerator designed by the team at Perficient and released to the Sitecore community as a quick-start tool for beginning Sitecore projects.</description>
