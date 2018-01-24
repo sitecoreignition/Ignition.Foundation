@@ -18,7 +18,6 @@
 			<dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
 			<dependency id="Glass.Mapper.Sc.Core" version="4.5.0.4" />
 			<dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="[1.0.0]" />
-			<dependency id="System.Reflection" version="[4.1.0]" />
 		</dependencies>
 	</metadata>
 </package>
