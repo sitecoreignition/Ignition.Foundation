@@ -9,9 +9,9 @@ using Ignition.Foundation.Core.Automap;
 [assembly: AssemblyTitle("Ignition.Foundation.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Perficient")]
 [assembly: AssemblyProduct("Ignition for Sitecore")]
-[assembly: AssemblyCopyright("Copyright © 2016")]
+[assembly: AssemblyCopyright("Copyright © 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
