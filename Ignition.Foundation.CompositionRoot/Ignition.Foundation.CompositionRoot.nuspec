@@ -12,7 +12,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>An open source development accelerator designed by the team at Perficient and released to the Sitecore community as a quick-start tool for beginning Sitecore projects.</description>
 		<releaseNotes>Updated for Sitecore 9.0 and Microsoft Dependency Injection.</releaseNotes>
-		<copyright>Copyright 2018</copyright>
+		<copyright>$copyright$</copyright>
 		<tags>ignition sitecore accelerator framework helix habitat</tags>
 		<dependencies>
 			<dependency id="Ignition.Foundation.Core" version="$version$" />
