@@ -21,10 +21,10 @@ namespace Ignition.Foundation.Core.Mvc
 		[TypeConverter(typeof(IndexFieldItemUriValueConverter)), XmlIgnore, IndexField("_uniqueid")]
 		public virtual ItemUri Uri { get; set; }
 
-		[SitecoreInfo(SitecoreInfoType.DisplayName)]
+		[SitecoreInfo(SitecoreInfoType.DisplayName), IndexField("_displayname")]
 		public virtual string DisplayName { get; set; }
 
-		[SitecoreInfo(SitecoreInfoType.Version)]
+		[SitecoreInfo(SitecoreInfoType.Version), IndexField("_version")]
 		public virtual int Version { get; set; }
 
 		[SitecoreInfo(SitecoreInfoType.Path), IndexField("_path")]
@@ -33,10 +33,10 @@ namespace Ignition.Foundation.Core.Mvc
 		[SitecoreInfo(SitecoreInfoType.Name), IndexField("_name")]
 		public virtual string Name { get; set; }
 
-		[SitecoreInfo(SitecoreInfoType.Url, UrlOptions = SitecoreInfoUrlOptions.LanguageEmbeddingNever)]
+		[SitecoreInfo(SitecoreInfoType.Url)]
 		public virtual string Url { get; set; }
 
-        [SitecoreInfo(SitecoreInfoType.TemplateId)]
-        public virtual Guid TemplateId { get; set; }
+		[SitecoreInfo(SitecoreInfoType.TemplateId), IndexField("_template")]
+		public virtual Guid TemplateId { get; set; }
 	}
 }

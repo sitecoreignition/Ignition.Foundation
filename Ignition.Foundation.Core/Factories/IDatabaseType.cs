@@ -1,7 +1,7 @@
 ﻿namespace Ignition.Foundation.Core.Factories
 {
-    public interface IDatabaseType
-    {
-        string GetDatabaseName();
-    }
+	public interface IDatabaseType
+	{
+		string GetDatabaseName();
+	}
 }

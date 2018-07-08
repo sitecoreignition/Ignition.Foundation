@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
-using Ignition.Foundation.Core.Attributes;
+using Ignition.Foundation.Core.Automap;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
@@ -9,9 +9,9 @@ using Ignition.Foundation.Core.Attributes;
 [assembly: AssemblyTitle("Ignition.Foundation.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Perficient")]
 [assembly: AssemblyProduct("Ignition for Sitecore")]
-[assembly: AssemblyCopyright("Copyright © 2016")]
+[assembly: AssemblyCopyright("Copyright © 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -36,6 +36,6 @@ using Ignition.Foundation.Core.Attributes;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("1.0.*")]
-//[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: IgnitionAutomap]

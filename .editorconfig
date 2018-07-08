@@ -1,0 +1,12 @@
+; Top-most EditorConfig file
+root = true
+
+; 4-column tab indentation
+[*]
+indent_style = tab
+indent_size = 4
+
+; 2-column space indentation for app.config, packages.config, and web.config files
+[{app.config,App.config,packages.config,web.config,Web.config}]
+indent_style = space
+indent_size = 2

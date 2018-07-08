@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ignition.Foundation.Core</RootNamespace>
     <AssemblyName>Ignition.Foundation.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -31,96 +31,98 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Core.4.1.0\lib\net45\Castle.Core.dll</HintPath>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper, Version=4.4.0.199, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.4.0.199\lib\net45\Glass.Mapper.dll</HintPath>
+    <Reference Include="Glass.Mapper, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.5.0.4\lib\net45\Glass.Mapper.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc, Version=4.4.0.199, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Glass.Mapper.Sc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.4.0.199\lib\100\Glass.Mapper.Sc.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.5.0.4\lib\100\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc.Mvc, Version=4.4.0.199, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Glass.Mapper.Sc.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.4.0.199\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.5.0.4\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="SimpleInjector, Version=4.0.8.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.4.0.8\lib\net45\SimpleInjector.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="SimpleInjector.Integration.Web, Version=4.0.8.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.Integration.Web.4.0.8\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=4.0.8.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.4.0.8\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
+    <Reference Include="Sitecore.Analytics, Version=11.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.NoReferences.9.0.171219\lib\NET462\Sitecore.Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="SimpleInjector.Packaging, Version=4.0.8.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.Packaging.4.0.8\lib\net40\SimpleInjector.Packaging.dll</HintPath>
+    <Reference Include="Sitecore.Analytics.Model, Version=11.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Model.NoReferences.9.0.171219\lib\NET462\Sitecore.Analytics.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.NoReferences.8.2.161115\lib\NET452\Sitecore.Analytics.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sitecore.Client, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Client.NoReferences.9.0.171219\lib\NET462\Sitecore.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Model.NoReferences.8.2.161115\lib\NET452\Sitecore.Analytics.Model.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sitecore.ContentSearch, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ContentSearch.NoReferences.9.0.171219\lib\NET462\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Client, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Client.NoReferences.8.2.161115\lib\NET452\Sitecore.Client.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.171219\lib\NET462\Sitecore.ContentSearch.Linq.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.NoReferences.8.2.161115\lib\NET452\Sitecore.ContentSearch.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.Linq.NoReferences.8.2.161115\lib\NET452\Sitecore.ContentSearch.Linq.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.161115\lib\NET452\Sitecore.Kernel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.NoReferences.8.2.161115\lib\NET452\Sitecore.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Mvc.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.Analytics.NoReferences.8.2.161115\lib\NET452\Sitecore.Mvc.Analytics.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sitecore.Mvc.Analytics, Version=11.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.Analytics.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\IgnitionAutomapAttribute.cs" />
+    <Compile Include="Automap\IgnitionAutomapHelper.cs" />
+    <Compile Include="Automap\IgnitionAutomapAttribute.cs" />
+    <Compile Include="GlassMapper\DataMappers\MultilineFieldStringMapper.cs" />
+    <Compile Include="DependencyInjection\ServiceCollectionExtensions.cs" />
+    <Compile Include="GlassMapper\IGlassSettingsConsumer.cs" />
+    <Compile Include="GlassMapper\Pipelines\AddMapsPipeline.cs" />
+    <Compile Include="GlassMapper\Pipelines\AddMapsPipelineArgs.cs" />
+    <Compile Include="GlassMapper\Pipelines\AddMapsProcessor.cs" />
+    <Compile Include="GlassMapper\Pipelines\Constants.cs" />
+    <Compile Include="GlassMapper\Pipelines\CreateResolverPipeline.cs" />
+    <Compile Include="GlassMapper\Pipelines\CreateResolverPipelineArgs.cs" />
+    <Compile Include="GlassMapper\Pipelines\CreateResolverProcessor.cs" />
+    <Compile Include="GlassMapper\Pipelines\GetGlassLoadersPipeline.cs" />
+    <Compile Include="GlassMapper\Pipelines\GetGlassLoadersPipelineArgs.cs" />
+    <Compile Include="GlassMapper\Pipelines\GetGlassLoadersProcessor.cs" />
+    <Compile Include="GlassMapper\Pipelines\PostLoadPipeline.cs" />
+    <Compile Include="GlassMapper\Pipelines\PostLoadPipelineArgs.cs" />
+    <Compile Include="GlassMapper\Pipelines\PostLoadProcessor.cs" />
+    <Compile Include="IgnitionCoreConfigurator.cs" />
     <Compile Include="Models\IGlassItem.cs" />
     <Compile Include="Factories\IDatabaseType.cs" />
     <Compile Include="Factories\ISitecoreSettingsFactory.cs" />
@@ -129,10 +131,6 @@
     <Compile Include="Factories\IIgnitionControllerContextFactory.cs" />
     <Compile Include="Factories\ISitecoreServiceFactory.cs" />
     <Compile Include="Factories\SitecoreServiceFactory.cs" />
-    <Compile Include="CoreConfiguration.cs" />
-    <Compile Include="DynamicPlaceholders\DynamicPlaceholder.cs" />
-    <Compile Include="DynamicPlaceholders\GetDynamicKeyAllowedRenderings.cs" />
-    <Compile Include="DynamicPlaceholders\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Models\IPage.cs" />
     <Compile Include="Models\Settings\IDecimalSetting.cs" />
     <Compile Include="Models\Settings\IImageSetting.cs" />
@@ -155,10 +153,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Factories\MasterDatabaseType.cs" />
     <Compile Include="Factories\WebDatabaseType.cs" />
-    <Compile Include="SimpleInjector\ContainerExtensions.cs" />
-    <Compile Include="SimpleInjector\ImportPropertySelectionBehavior.cs" />
-    <Compile Include="SimpleInjector\MostResolvableConstructorBehavior.cs" />
-    <Compile Include="SimpleInjector\SimpleInjectorInstaller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
