@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Ignition.Foundation.CompositionRoot.DependencyInjection;
-using Ignition.Foundation.Core.Automap;
+using Ignition.Foundation.Core;
+using Ignition.Project.CompositionRoot.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
 
-namespace Ignition.Foundation.CompositionRoot
+namespace Ignition.Project.CompositionRoot
 {
 	public class IgnitionConfigurator : IServicesConfigurator
 	{
